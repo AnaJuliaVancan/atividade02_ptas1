@@ -18,6 +18,26 @@ app.get('/noticia1', (req, res) => {
   res.render('noticia1/index.ejs');
 });
 
+app.get('/noticia2', (req, res) => {
+  res.render('noticia2/index.ejs');
+});
+
+app.get('/noticia3', (req, res) => {
+  res.render('noticia3/index.ejs');
+});
+
+app.get('/noticia4', (req, res) => {
+  res.render('noticia4/index.ejs');
+});
+
+app.get('/noticia5', (req, res) => {
+  res.render('noticia5/index.ejs');
+});
+
+app.get('/noticia6', (req, res) => {
+  res.render('noticia6/index.ejs');
+});
+
 app.listen(port, () => {
   console.log('O servidor está funcionado que é uma belezinha!');
 });
