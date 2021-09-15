@@ -7,13 +7,17 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 app.get('/', (req, res) => {
-  res.send("Minha primeira página");
+  res.render('index.ejs');
 });
 
-app.get('/contatos', (req, res) => {
-  res.send("Meu contato é anajuliavancan@gmail.com");
+app.get('/listagem', (req, res) => {
+  res.render('listagem/index.ejs');
+});
+
+app.get('/noticia1', (req, res) => {
+  res.render('noticia1/index.ejs');
 });
 
 app.listen(port, () => {
-  console.log('O servidor está funcionado xuxu beleza');
+  console.log('O servidor está funcionado que é uma belezinha!');
 });
